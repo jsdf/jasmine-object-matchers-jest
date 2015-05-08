@@ -1,10 +1,10 @@
-let {toContainKeys, toContainValues} = require('./objectMatchers')
+let objectMatchers = require('./objectMatchers')
 
 module.exports = {
   toContainKeys() {
-    return {compare: toContainKeys}
+    return {compare: objectMatchers.toContainKeys}
   },
   toContainValues() {
-    return {compare: toContainValues}
+    return {compare: objectMatchers.toContainValues}
   },
 }

@@ -1,10 +1,10 @@
 {
-  "name": "jasmine-object-matchers",
+  "name": "jasmine-object-matchers-jest",
   "version": "0.0.3",
-  "homepage": "https://github.com/jsdf/jasmine-object-matchers",
+  "homepage": "https://github.com/jsdf/jasmine-object-matchers-jest",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jsdf/jasmine-object-matchers.git"
+    "url": "git://github.com/jsdf/jasmine-object-matchers-jest.git"
   },
   "author": "James Friend <james@jsdf.co> (http://jsdf.co/)",
   "license": "MIT",
@@ -14,6 +14,10 @@
     "jest": "jest $JEST_ARGS",
     "test": "npm run lint && npm run jest"
   },
+  "files": [
+    "index.js",
+    "lib/*.js"
+  ],
   "jest": {
     "scriptPreprocessor": "<rootDir>/support/preprocessor.js",
     "setupEnvScriptFile": "<rootDir>/node_modules/babel-core/lib/babel/polyfill.js",
@@ -32,11 +36,10 @@
       "json"
     ]
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "absolute-path": "0.0.0",
-    "babel-core": "^5.2.15",
+    "babel-core": "^5.2.17",
     "eslint": "^0.19.0",
     "jest-cli": "^0.4.0",
     "source-map-support": "^0.2.10"
